@@ -54,7 +54,7 @@ def main():
         f"from commit {git_last_commit} on branch {git_current_branch}"
     )
 
-    shutil.rmtree(BUILDIR)
+    shutil.rmtree(BUILDIR, ignore_errors=True)
     subprocess.check_call(
         ["git", "worktree", "add", str(HTMLDIR), "gh-pages"], cwd=ROOTDIR
     )
