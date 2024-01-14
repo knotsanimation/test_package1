@@ -1,6 +1,6 @@
 name = "test_package1"
 
-version = "0.2.0"
+version = "0.3.0"
 
 authors = ["doesn't matter"]
 
